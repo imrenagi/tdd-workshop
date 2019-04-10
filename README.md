@@ -8,7 +8,15 @@ Unit Test & TDD Workshop
 npm install mocha -g
 ```
 
-* Install assertion library
+* Install assertion library `npm install chai --save-dev`
+* Install mock framework `npm install sinon --save-dev`
+
+OR
+
+`npm install` to run everything.
+
+# Run the test
+
 ```
-npm install chai --save-dev
-``` 
+npm test
+```
