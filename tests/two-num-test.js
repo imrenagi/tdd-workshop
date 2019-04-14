@@ -15,4 +15,9 @@ describe('Two Num', function() {
     expect(twonum.find([8,6,3,4], 10)).to.eql([6,4])
   }) 
 
+  it('given valid array, a non-exist target, return empty indices', function() {
+    var twonum = new TwoNum()
+    expect(twonum.find([1,2,3], 7)).to.eql([])
+  })
+
 });
