@@ -8,4 +8,11 @@ describe('Two Num', function() {
     var twonum = new TwoNum()
     expect(() => twonum.find([1], 10)).to.throw('invalid array. length must be equal or greater than 2')    
   });  
+
+  it('given valid array, a valid target found, return all indices', function() {
+    var twonum = new TwoNum()
+    expect(twonum.find([1,2,3], 3)).to.eql([1,2])
+    expect(twonum.find([8,6,3,4], 10)).to.eql([6,4])
+  }) 
+
 });
