@@ -8,5 +8,5 @@ Requirements:
 • If one pushes x then pops, the value popped is x, and the size is one less than old size
 • If one pushes x then peeks, the value returned is x, but the size stays the same
 • If the size is n, then after n pops, the stack is empty and has size 0
-• Popping from an empty stack return an error: ErrNoSuchElement
-• Peeking into an empty stack return an error: ErrNoSuchElement
+• Popping from an empty queue return an error: 'No such element'
+• Peeking into an empty queue return an error: 'No such element'
