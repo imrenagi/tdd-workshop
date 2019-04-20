@@ -20,7 +20,7 @@ describe('CarAlarm', function() {
     var alarm = new SpeedAlarm(speedo);
 
     console.log("test")
-    sinon.mock(speedo).expects("speed").returns(40)    
+    sinon.mock(speedo).expects("speed").returns(40)        
     expect(alarm.check()).to.true;
 
     sinon.mock(speedo).verify();
